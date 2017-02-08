@@ -44,15 +44,24 @@ class Algorithm(val ap: AlgorithmParams)
 
     // Build customer from query and convert into data frame
     val customerFromQuery = Customer(
-      None, Some(query.intlPlan), Some(query.voiceMailPlan),
+      None,
+      Some(query.intlPlan),
+      Some(query.voiceMailPlan),
       Some(query.numVmailMsg),
-      Some(query.totalDayMins), Some(query.totalDayCalls),
-      Some(query.totalDayCharge), Some(query.totalEveMins),
-      Some(query.totalEveCalls), Some(query.totalEveCharge),
-      Some(query.totalNightMins), Some(query.totalNightCalls),
-      Some(query.totalNightCharge), Some(query.totalIntlMins),
-      Some(query.totalIntlCalls), Some(query.totalIntlCharge),
-      Some(query.customerServiceCalls), None)
+      Some(query.totalDayMins),
+      Some(query.totalDayCalls),
+      Some(query.totalDayCharge),
+      Some(query.totalEveMins),
+      Some(query.totalEveCalls),
+      Some(query.totalEveCharge),
+      Some(query.totalNightMins),
+      Some(query.totalNightCalls),
+      Some(query.totalNightCharge),
+      Some(query.totalIntlMins),
+      Some(query.totalIntlCalls),
+      Some(query.totalIntlCharge),
+      Some(query.customerServiceCalls),
+      None)
     val customerQueryRDD = model.sc.parallelize(Array(customerFromQuery))
     val customerQueryDataFrame = new H2OFrame(customerQueryRDD)
 
