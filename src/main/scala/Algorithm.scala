@@ -1,6 +1,6 @@
 import grizzled.slf4j.Logger
 import hex.deeplearning.{DeepLearning, DeepLearningModel, DeepLearningParameters}
-import io.prediction.controller.{IPersistentModel, P2LAlgorithm, Params}
+import org.apache.predictionio.controller.{IPersistentModel, P2LAlgorithm, Params}
 import org.apache.spark.SparkContext
 import org.apache.spark.h2o._
 

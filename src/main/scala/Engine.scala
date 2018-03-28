@@ -1,4 +1,4 @@
-import io.prediction.controller.{Engine, IEngineFactory}
+import iorg.apache.predictionio.controller.{Engine, IEngineFactory}
 
 case class Query(intlPlan: Boolean,
                  voiceMailPlan: Boolean,

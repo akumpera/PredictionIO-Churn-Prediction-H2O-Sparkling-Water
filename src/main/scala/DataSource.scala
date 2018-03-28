@@ -1,7 +1,7 @@
 import grizzled.slf4j.Logger
-import io.prediction.controller.{EmptyActualResult, EmptyEvaluationInfo, PDataSource, Params}
-import io.prediction.data.storage.Event
-import io.prediction.data.store.PEventStore
+import org.apache.predictionio.controller.{EmptyActualResult, EmptyEvaluationInfo, PDataSource, Params}
+import org.apache.predictionio.data.storage.Event
+import org.apache.predictionio.data.store.PEventStore
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 
